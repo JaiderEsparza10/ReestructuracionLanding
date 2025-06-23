@@ -5,17 +5,19 @@ body {
     background-color: white;
 }
 
-header {
+/* ===== ENCABEZADO ===== */
+.encabezado {
     display: inline-block;
     height: 70px;
     align-items: center;
     width: 100%;
 }
 
-.izquierda {
+.encabezado__izquierda {
     display: inline-block;
 }
-.izquierda img{
+
+.encabezado__logo {
     height: 50px;
     margin-left: 200px;
     display: inline-block;
@@ -23,7 +25,7 @@ header {
     margin-top: 25px;
 }
 
-.nombre-empresa{
+.encabezado__nombre {
     display: inline-block;
     vertical-align: middle;
     line-height: 5px;
@@ -32,28 +34,23 @@ header {
     font-size: 30px;
 }
 
-.derecha{
+.navegacion {
     float: right;
     line-height: 80px;
     margin-top: 25px;
     margin-right: 200px;
 }
 
-.derecha a {
+.navegacion__enlaces {
     float: left;
     text-decoration: none;
-    padding-right: 2px;
     margin-right: 100px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: rgb(173, 173, 173);
     font-size: 20px;
-    padding: 0;
-    margin-top: 0;
-
 }
 
-#boton-navegacion{
-
+.navegacion__enlaces--boton {
     background-color: rgb(0, 153, 255);
     display: block;
     color: white;
@@ -61,33 +58,33 @@ header {
     padding: 4px 20px;
 }
 
-/*CONTENIDO PAGINA*/
-.Contenido{
+/* ===== SECCIÓN PRINCIPAL ===== */
+.seccion-principal__contenido {
     margin-left: 200px;
     margin-top: 300px;
 }
 
-.Contenido h1{
+.contenido__titulo {
     font-size: 50px;
     display: block;
     font-weight: bold;
 }
 
-.texto-inferior{
+.contenido__titulo--inferior {
     margin-top: -20px;
 }
 
-.Contenido p{
+.contenido__parrafo {
     font-family: sans-serif;
     font-size: 20px;
     color: rgb(173, 173, 173);
 }
 
-.parrafo-inferior{
+.contenido__parrafo--inferior {
     margin-bottom: 60px;
 }
 
-.boton-start{
+.contenido__boton {
     text-decoration: none;
     font-family: sans-serif;
     color: white;
@@ -97,7 +94,7 @@ header {
     border-radius: 15px;
 }
 
-div .imagen{
+.seccion-principal__imagen .imagen-principal {
     height: 600px;
     float: right;
     margin-top: -420px;
