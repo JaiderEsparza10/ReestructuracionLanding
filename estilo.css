@@ -1,102 +1,107 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
+    font-family: sans-serif; /* Define el tipo de letra básico para toda la página. */
+    margin: 0; /* Quita los márgenes exteriores del cuerpo de la página. */
+    padding: 0; /* Quita el relleno interior del cuerpo de la página. */
+    background-color: white; /* Establece el fondo de la página en blanco. */
 }
 
 /* ===== ENCABEZADO ===== */
 .encabezado {
-    display: inline-block;
-    height: 70px;
-    align-items: center;
-    width: 100%;
+    display: inline-block; /* Permite que el encabezado ocupe solo el espacio que necesita y esté en línea. */
+    height: 70px; /* Define la altura del encabezado. */
+    align-items: center; /* Alinea los elementos internos al centro (horizontalmente, si es un flex/grid). */
+    width: 100%; /* El encabezado ocupa todo el ancho disponible. */
 }
 
+/* Estilos para la parte izquierda del encabezado, que agrupa el logo y el nombre. */
 .encabezado__izquierda {
-    display: inline-block;
+    display: inline-block; /* Mantiene esta sección en línea con otros elementos. */
 }
 
 .encabezado__logo {
-    height: 50px;
-    margin-left: 200px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: 25px;
+    height: 50px; /* Altura del logo. */
+    margin-left: 200px; /* Espacio desde el borde izquierdo de la página. */
+    display: inline-block; /* Permite que el logo esté en línea con el nombre. */
+    vertical-align: middle; /* Alinea el logo verticalmente con el texto. */
+    margin-top: 25px; /* Empuja el logo un poco hacia abajo desde el borde superior. */
 }
 
 .encabezado__nombre {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 5px;
-    margin-top: 60px;
-    margin-left: 2px;
-    font-size: 30px;
+    display: inline-block; /* Permite que el nombre esté en línea con el logo. */
+    vertical-align: middle; /* Alinea el nombre verticalmente. */
+    line-height: 5px; /* Ajusta el espacio entre líneas de texto. */
+    margin-top: 60px; /* Empuja el nombre un poco hacia abajo. */
+    margin-left: 2px; /* Espacio pequeño entre el logo y el nombre. */
+    font-size: 30px; /* Tamaño de la fuente del nombre. */
 }
 
 .navegacion {
-    float: right;
-    line-height: 80px;
-    margin-top: 25px;
-    margin-right: 200px;
+    float: right; /* Mueve la navegación a la derecha del encabezado. */
+    line-height: 80px; /* Ajusta la altura de línea para centrar verticalmente los enlaces. */
+    margin-top: 25px; /* Empuja la navegación un poco hacia abajo. */
+    margin-right: 200px; /* Espacio desde el borde derecho de la página. */
 }
 
 .navegacion__enlaces {
-    float: left;
-    text-decoration: none;
-    margin-right: 100px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(173, 173, 173);
-    font-size: 20px;
+    float: left; /* Alinea los enlaces a la izquierda dentro de la navegación. */
+    text-decoration: none; /* Quita el subrayado de los enlaces. */
+    margin-right: 100px; /* Espacio entre los enlaces. */
+    font-family: Arial, Helvetica, sans-serif; /* Tipo de letra para los enlaces. */
+    color: rgb(173, 173, 173); /* Color gris para el texto de los enlaces. */
+    font-size: 20px; /* Tamaño de la fuente de los enlaces. */
 }
 
 .navegacion__enlaces--boton {
-    background-color: rgb(0, 153, 255);
-    display: block;
-    color: white;
-    border-radius: 30px;
-    padding: 4px 20px;
+    background-color: rgb(0, 153, 255); /* Color de fondo azul para el botón. */
+    display: block; /* Hace que el botón ocupe su propia línea para controlar el padding. */
+    color: white; /* Color del texto del botón en blanco. */
+    border-radius: 30px; /* Hace que el botón sea muy redondeado. */
+    padding: 4px 20px; /* Relleno interior del botón (arriba/abajo y lados). */
 }
 
 /* ===== SECCIÓN PRINCIPAL ===== */
 .seccion-principal__contenido {
-    margin-left: 200px;
-    margin-top: 300px;
+    margin-left: 200px; /* Espacio desde el borde izquierdo. */
+    margin-top: 300px; /* Espacio desde el borde superior. */
 }
+
 
 .contenido__titulo {
-    font-size: 50px;
-    display: block;
-    font-weight: bold;
+    font-size: 50px; /* Tamaño de la fuente grande. */
+    display: block; /* El título ocupa su propia línea. */
+    font-weight: bold; /* El texto del título es negrita. */
 }
+
 
 .contenido__titulo--inferior {
-    margin-top: -20px;
+    margin-top: -20px; /* Superpone esta parte del título con la superior. */
 }
+
 
 .contenido__parrafo {
-    font-family: sans-serif;
-    font-size: 20px;
-    color: rgb(173, 173, 173);
+    font-family: sans-serif; /* Tipo de letra para los párrafos. */
+    font-size: 20px; /* Tamaño de la fuente de los párrafos. */
+    color: rgb(173, 173, 173); /* Color gris para el texto del párrafo. */
 }
 
+
 .contenido__parrafo--inferior {
-    margin-bottom: 60px;
+    margin-bottom: 60px; /* Espacio debajo del párrafo. */
 }
 
 .contenido__boton {
-    text-decoration: none;
-    font-family: sans-serif;
-    color: white;
-    background-color: rgb(118, 200, 252);
-    line-height: 20px;
-    padding: 15px 30px;
-    border-radius: 15px;
+    text-decoration: none; /* Quita el subrayado del botón si es un enlace. */
+    font-family: sans-serif; /* Tipo de letra para el botón. */
+    color: white; /* Color del texto del botón en blanco. */
+    background-color: rgb(118, 200, 252); /* Color de fondo azul claro para el botón. */
+    line-height: 20px; /* Altura de línea para el texto del botón. */
+    padding: 15px 30px; /* Relleno interior del botón. */
+    border-radius: 15px; /* Bordes redondeados para el botón. */
 }
 
 .seccion-principal__imagen .imagen-principal {
-    height: 600px;
-    float: right;
-    margin-top: -420px;
-    margin-right: 150px;
+    height: 600px; /* Altura de la imagen. */
+    float: right; /* Mueve la imagen a la derecha. */
+    margin-top: -420px; /* Sube la imagen para que se superponga con el contenido. */
+    margin-right: 150px; /* Espacio desde el borde derecho. */
 }
